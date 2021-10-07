@@ -38,7 +38,7 @@ public class Main {
 
             if (Integer.parseInt(day) > 31 || (Integer.parseInt(month) > 12) ||
                     (Integer.parseInt(year) < 0) || (Integer.parseInt(day) < 0) ||
-                    (Integer.parseInt(month) < 0)) {
+                    (Integer.parseInt(month) < 0) || (Integer.parseInt(year) > 9999) || Integer.parseInt(month) < 1000) {
                 writeMessage("Date entered incorrectly");
             }
 
